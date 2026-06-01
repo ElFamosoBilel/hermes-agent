@@ -13,7 +13,15 @@ approved outbound action.
 
 ## Required Context
 
-Before answering a ticket decision question, inspect the available evidence:
+Before answering a ticket decision question, inspect the available evidence.
+Preferred command:
+
+```bash
+python skills/customer-support/alexis-ticket-coach/scripts/inspect_ticket.py --data-dir "$ALEXIS_DATA_DIR" --ticket <ticketId>
+```
+
+Use the JSON bundle from that command as the primary evidence source. If the
+script cannot run, inspect the files manually:
 
 - ticket metadata from `tickets.json`;
 - transcript text from `transcripts/<ticketId>.txt`;
