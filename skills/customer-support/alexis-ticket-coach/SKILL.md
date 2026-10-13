@@ -43,11 +43,6 @@ If a required file or event is missing, say exactly which evidence is missing.
   the user has reopened it with a new unanswered issue.
 - For opening-ticket form questions, treat the modal/form text as the first
   customer question. A missing public response can be a bot bug.
-- For Dragonia, do not ask the same email repeatedly. If the Dragonia mail is
-  already registered and the affiliate deposit checkbox is validated, ask for
-  the USDC address plus a screenshot of the Dragonia wallet QR code. If a
-  second ticket arrives while manager validation is still pending, keep it in
-  manager-waiting state and ping Bilel only after manager validation.
 - For giveaway/deposit workflows, separate "client claim", "sheet evidence",
   "manager validation", and "credit action". Do not collapse them.
 
